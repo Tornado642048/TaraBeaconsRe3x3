@@ -1,0 +1,61 @@
+"Just a tracking file"
+"changing these values will not impact the actual in game values"
+
+gen
+mining_time = 0.2
+
+tw1
+max_health = 300
+supply_area_distance = 4
+energy_usage = "600kW"
+distribution_effectivity = 0.6
+module_slots = 3
+module_info_max_icons_per_row = 3
+
+tw2
+max_health = 400
+supply_area_distance = 5
+energy_usage = "800kW"
+distribution_effectivity = 0.8
+module_slots = 4
+module_info_max_icons_per_row = 4
+
+tw3
+max_health = 500
+supply_area_distance = 6
+energy_usage = "1MW"
+distribution_effectivity = 1
+module_slots = 5
+module_info_max_icons_per_row = 3
+
+tw4
+max_health = 600
+supply_area_distance = 7
+energy_usage = "1.2MW"
+distribution_effectivity = 1.2
+module_slots = 6
+module_info_max_icons_per_row = 4
+
+tw5
+max_health = 700
+supply_area_distance = 8
+energy_usage = "1.4MW"
+distribution_effectivity = 1.4
+module_slots = 7
+module_info_max_icons_per_row = 4
+
+tw6
+max_health = 800
+supply_area_distance = 10
+energy_usage = "1.6MW"
+distribution_effectivity = 1.6
+module_slots = 8
+module_info_max_icons_per_row = 4
+
+tw7
+max_health = 1000
+supply_area_distance = 15
+energy_usage = "4MW"
+distribution_effectivity = 2.0
+module_slots = 10
+module_info_max_icons_per_row = 4
