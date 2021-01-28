@@ -28,7 +28,11 @@ local function scale_replace(graphics_set)
         -- change the top part 
         item.animation.hr_version.shift = {hr_vector_x , hr_vector_y + 0.442}
       end
-      item.animation.scale = 0.33
+      if item.animation.scale == nil then
+        item.animation.scale = 0.33
+      else
+        item.animation.scale = item.animation.scale * 0.33
+      end
       if item.animation.hr_version.scale then
         item.animation.hr_version.scale = item.animation.hr_version.scale * 0.33
       end
@@ -58,7 +62,11 @@ local function scale_replace(graphics_set)
             subitem.hr_version.shift = {hr_vector_x * 0.33, hr_vector_y}
           end
         end
-        subitem.scale = 0.33
+        if subitem.scale == nil then
+          subitem.scale = 0.33
+        else
+          subitem.scale = item.scale * 0.33
+        end
         if subitem.hr_version.scale then
           subitem.hr_version.scale = subitem.hr_version.scale * 0.33
         end
@@ -151,6 +159,22 @@ if settings.startup["tarawind-reloaded-3x3mode"].value == false then
   data.raw["beacon"]["twBeacon7"].collision_box = {{-0.2, -0.2}, {0.2, 0.2}}
   data.raw["beacon"]["twBeacon7"].selection_box = {{-0.5, -0.5}, {0.5, 0.5}}
   scale_replace(data.raw.beacon.twBeacon7.graphics_set)
+
+  -- supply area range fix when they are smaller
+
+  data.raw["beacon"]["twBeacon1"].supply_area_distance = data.raw["beacon"]["twBeacon1"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon2"].supply_area_distance = data.raw["beacon"]["twBeacon2"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon3"].supply_area_distance = data.raw["beacon"]["twBeacon3"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon4"].supply_area_distance = data.raw["beacon"]["twBeacon4"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon5"].supply_area_distance = data.raw["beacon"]["twBeacon5"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon6"].supply_area_distance = data.raw["beacon"]["twBeacon6"].supply_area_distance + 1
+
+  data.raw["beacon"]["twBeacon7"].supply_area_distance = data.raw["beacon"]["twBeacon7"].supply_area_distance + 1
 
   -- log(data.raw.beacon.twBeacon1.graphics_set == data.raw.beacon.twBeacon2.graphics_set)
   -- log(data.raw.beacon.twBeacon2.graphics_set == data.raw.beacon.twBeacon3.graphics_set)
