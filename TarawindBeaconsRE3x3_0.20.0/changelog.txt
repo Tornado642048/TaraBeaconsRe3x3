@@ -1,0 +1,58 @@
+Planned:
+-nothing: suggestions are welcome
+Maybe:
+-more expensive material costs for high tier beacons (when productivity is allowed)
+Known issues:
+-Beacons will clip if placed in 1x1 mode next to eachother and then changing to 3x3 mode (not fixable currently)
+
+V0.19.0
+-The big graphics update!!!
+-Replacable beacons (Yes, normal beacons should work now)
+-Tons of bugfixes related to the graphics update
+-Small size beacons will now have the same range as big beacons again
+-Tons of code restructuring
+
+V0.18.3
+-Updated to 1.1
+-Code cleanup
+-Tech icon fix
+-(not in last changelog) research balance matching vanilla
+
+V0.18.2
+-Added functionality to allow beacons to be replacable with eachother
+-Updated previous changelog to add missing bug fix change
+
+V0.18.1
+-Reversed the functionality edits and made them options that are turned off by default
+-Added option to make all beacons take up 3x3 tiles instead of 1x1
+-Added option to prevent beacons from being able to use productivity modules with the exceptoin of mk7
+-Added option to make the effect range of all upgraded beacons the same as the normal beacon
+
+V0.18.0
+-Edited to work like regular beacons (3x3 area).
+-Edited functionality of beacons to only allow highest tier beacon to use productivity modules.
+-Updated to work with 0.18.
+-Added Dutch localization
+-Fixed area size (previous area tile size was off from regular game tile size)
+
+V0.17.0
+-Updated to work with 0.17.
+
+V0.16.3
+-Edited beacon's descriptions to show effect areas and module slots.
+-Beacons now cost more energy to run each tier - for balancing reasons.
+-Added Chinese localization.
+
+V0.16.2
+-Thanks to anarchyinc, i was able to remove the productivity limit placed by the devs.
+-Now the beacons should be able to give all recipes a productivity upgrade.
+
+V0.16.1
+-The costs to make all beacons are cut down, since those stupid devs "fixed" some irrelevant bugs in the latest 0.16.23 patch, and broke how they used to work. You can still put productivity modules in them, but only recipes that accept productivity upgrades would receive it.
+
+
+V0.15.3
+-Adjusted the cost of all recipes.
+
+V0.15.2
+-Fixed "unknown.key" problems in entity and tech names.
